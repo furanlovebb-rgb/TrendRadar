@@ -3,65 +3,46 @@
 商业化
 智能体
 Agent
-Workflow
-!课程
-!培训
-!速成
++AI
+!课程!培训
 
 /(?<![a-zA-Z])LLM(?![a-zA-Z])|(?<![a-zA-Z])AGI(?![a-zA-Z])/i => 大模型趋势
 生成式AI
 Transformer
 RAG
-+趋势
-+报告
+!卖课!速成
 
-/OpenAI|ChatGPT|Sora/i => OpenAI动态
-+发布
-+更新
-!股价
+/OpenAI|ChatGPT|Sora/i => OpenAI
+Sam Altman
+!股价!大跌
 
-/Anthropic|Claude/i => Claude动态
-+发布
-+更新
+/Anthropic|Claude/i => Claude
+!充值!渠道
 
 /Google|Gemini|DeepMind/i => 谷歌AI
-+发布
-+更新
 
-/DeepSeek|Kimi|月之暗面|Llama/i => 国产与开源AI
-+发布
-+更新
-+公测
+/DeepSeek|Kimi|月之暗面/ => 国产大模型
+/Llama|Meta AI/i => Meta Llama
 
-/马斯克|Musk|xAI|Grok/i => 马斯克AI布局
+/马斯克|Musk|xAI|Grok/i => 马斯克
 SpaceX
 Starship
 Neuralink
-!绯闻
-!八卦
-!恋情
+!绯闻!八卦
 
-/美联储|Fed|CPI|GDP/i => 全球宏观经济
+/美联储|Fed|CPI|GDP/i => 全球经济
 加息
 降息
 汇率
-+数据
-+政策
 
 中国经济
 发改委
 央行
 新质生产力
-+发布
-+解读
-!推荐
+!心得!体会
 
-/A股|港股|上证指数|恒生指数|北向资金/ => 股市资金动向
+/A股|港股|上证指数|北向资金/ => 股市行情
+中概股
 +收盘
-+行情
-+资金
-!代码
-!荐股
-!诊股
-!加群
+!荐股!代码!群
 @5

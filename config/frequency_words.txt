@@ -16,6 +16,7 @@
 /(Global|Worldwide).*(AI|Artificial Intelligence)/ => 全球AI动态
 /(Generative AI|GenAI|AIGC|AGI|ASI|Singularity)/ => 生成式AI与AGI
 /Sam Altman|Jensen Huang|Yann LeCun|Geoffrey Hinton|Andrew Ng/ => AI大佬动态
+/(?<![a-zA-Z])全球AI发展(?![a-zA-Z])/ => 全球AI发展动态
 
 # --- 3. 大模型 (LLM) 深度跟踪 ---
 # 关注：主流模型更新、RAG、Agent、微调
@@ -28,6 +29,7 @@
 /(OpenAI|Anthropic|DeepMind|Google AI|Meta AI)/ => AI巨头动态
 /(Midjourney|Stable Diffusion|Sora|Runway|Pika|Suno|Udio)/ => AI绘画与视频音乐
 /(Perplexity|Character.ai|Jasper|Copy.ai|Notion AI)/ => 热门AI应用
+/(AI新品发布|AI产品更新|AI技术新品)/ => AI新品发布
 
 # --- 5. 马斯克商业帝国 ---
 # 关注：特斯拉、SpaceX、xAI、推特、脑机接口
@@ -52,13 +54,13 @@
 
 # --- 8. A股市场 ---
 # 关注：大盘指数、北向资金、牛市/熊市信号
-/(A股|上证指数|深证成指|创业板|科创板|沪深300)/ => A股大盘
+/(A股|上证指数|深证成指|创业板|科创板|沪深300|AI概念|算力概念|大模型概念|宏观经济与A股|政策利好)/ => A股大盘
 /(北向资金|成交量|主力资金|券商|牛市|救市)/ => 股市资金与情绪
 
 # --- 9. 全球热点新闻 ---
 # 关注：突发大事件、地缘政治
-/(Breaking News|突发|重磅)/ => 突发大新闻
-/(War|Conflict|Election|战争|冲突|大选|地缘政治)/ => 全球地缘热点
+/(全球热点|突发|重磅)/ => 突发大新闻
+/(战争|冲突|大选|地缘政治)/ => 全球地缘热点
 
 # --- 全局过滤 (可选) ---
 # 过滤掉不想看到的广告或无关内容

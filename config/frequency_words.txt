@@ -1,48 +1,66 @@
-/AI产品经理|AI PM/i => AI产品经理
-产品落地
-商业化
-智能体
-Agent
-+AI
-!课程!培训
+# ====================================================
+# TrendRadar 关键词配置文件
+# 格式说明：
+# 1. 普通关键词：直接输入单词，如 "AI"
+# 2. 正则表达式：使用 /pattern/ 包裹，如 /(AI|人工智能)/
+# 3. 别名显示：使用 => 指定报告中显示的标题，如 /pattern/ => 显示名称
+# ====================================================
 
-/(?<![a-zA-Z])LLM(?![a-zA-Z])|(?<![a-zA-Z])AGI(?![a-zA-Z])/i => 大模型趋势
-生成式AI
-Transformer
-RAG
-!卖课!速成
+# --- 1. AI 产品经理与职业发展 ---
+# 关注：AI PM 岗位、产品落地、商业化场景
+/(AI|人工智能|大模型).*(产品经理|Product Manager|PM)/ => AI产品经理
+/AI.*(商业化|落地|应用场景|解决方案|ToB|SaaS)/ => AI商业应用
 
-/OpenAI|ChatGPT|Sora/i => OpenAI
-Sam Altman
-!股价!大跌
+# --- 2. 全球 AI 发展最新动态 ---
+# 关注：宏观趋势、AGI、技术突破、硅谷动态
+/(Global|Worldwide).*(AI|Artificial Intelligence)/ => 全球AI动态
+/(Generative AI|GenAI|AIGC|AGI|ASI|Singularity)/ => 生成式AI与AGI
+/Sam Altman|Jensen Huang|Yann LeCun|Geoffrey Hinton|Andrew Ng/ => AI大佬动态
 
-/Anthropic|Claude/i => Claude
-!充值!渠道
+# --- 3. 大模型 (LLM) 深度跟踪 ---
+# 关注：主流模型更新、RAG、Agent、微调
+/(Large Language Model|LLM|Transformer|MoE)/ => 大模型技术
+/(GPT-4|GPT-5|Claude|Gemini|Llama|Mistral|DeepSeek|Qwen|Yi-34B)/ => 主流模型更新
+/(RAG|Retrieval-Augmented|Fine-tuning|微调|Agent|智能体)/ => RAG与Agent技术
 
-/Google|Gemini|DeepMind/i => 谷歌AI
+# --- 4. 全球 AI 新品与独角兽 ---
+# 关注：头部公司新品发布、热门 AI 应用
+/(OpenAI|Anthropic|DeepMind|Google AI|Meta AI)/ => AI巨头动态
+/(Midjourney|Stable Diffusion|Sora|Runway|Pika|Suno|Udio)/ => AI绘画与视频音乐
+/(Perplexity|Character.ai|Jasper|Copy.ai|Notion AI)/ => 热门AI应用
 
-/DeepSeek|Kimi|月之暗面/ => 国产大模型
-/Llama|Meta AI/i => Meta Llama
+# --- 5. 马斯克商业帝国 ---
+# 关注：特斯拉、SpaceX、xAI、推特、脑机接口
+/(Elon Musk|马斯克)/ => 马斯克动态
+/(Tesla|特斯拉|Cybertruck|Optimus|FSD|Robotaxi)/ => 特斯拉与自动驾驶
+/(SpaceX|Starship|Starlink|星舰|星链)/ => SpaceX航天
+/(Neuralink|脑机接口)/ => 脑机接口
+/(xAI|Grok)/ => xAI与Grok
 
-/马斯克|Musk|xAI|Grok/i => 马斯克
-SpaceX
-Starship
-Neuralink
-!绯闻!八卦
+# --- 6. 全球经济与宏观 ---
+# 关注：美联储、通胀、美股、黄金
+/(Fed|Federal Reserve|美联储|Powell|鲍威尔).*(Rate|Interest|加息|降息)/ => 美联储政策
+/(Inflation|CPI|PPI|Recession|通胀|衰退|GDP)/ => 全球宏观数据
+/(Nasdaq|S&P 500|Dow Jones|纳斯达克|标普500|道琼斯|Gold|Bitcoin)/ => 全球市场资产
 
-/美联储|Fed|CPI|GDP/i => 全球经济
-加息
-降息
-汇率
+# --- 7. 中国经济 ---
+# 关注：央行政策、房地产、外贸、人民币
+/(PBoC|央行|人民银行|降准|LPR)/ => 中国货币政策
+/(中国|China).*(GDP|CPI|PMI|Economy|经济增长)/ => 中国宏观经济
+/(Real Estate|房地产|楼市|房贷)/ => 房地产市场
+/(Export|Import|Trade|出口|进口|外贸|人民币汇率)/ => 外贸与汇率
 
-中国经济
-发改委
-央行
-新质生产力
-!心得!体会
+# --- 8. A股市场 ---
+# 关注：大盘指数、北向资金、牛市/熊市信号
+/(A股|上证指数|深证成指|创业板|科创板|沪深300)/ => A股大盘
+/(北向资金|成交量|主力资金|券商|牛市|救市)/ => 股市资金与情绪
 
-/A股|港股|上证指数|北向资金/ => 股市行情
-中概股
-+收盘
-!荐股!代码!群
-@5
+# --- 9. 全球热点新闻 ---
+# 关注：突发大事件、地缘政治
+/(Breaking News|突发|重磅)/ => 突发大新闻
+/(War|Conflict|Election|战争|冲突|大选|地缘政治)/ => 全球地缘热点
+
+# --- 全局过滤 (可选) ---
+# 过滤掉不想看到的广告或无关内容
+[GLOBAL_FILTER]
+/ (广告|代写|充值|博彩|VPN|翻墙|Course|Tutorial|加群|免费领取) /

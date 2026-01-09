@@ -26,7 +26,7 @@
 
 # --- 4. 全球 AI 新品与独角兽 ---
 # 关注：头部公司新品发布、热门 AI 应用
-/(OpenAI|Anthropic|DeepMind|Google AI|Meta AI)/ => AI巨头动态
+/(OpenAI|Anthropic|DeepMind|Google AI|Meta AI|英伟达)/ => AI巨头动态
 /(Midjourney|Stable Diffusion|Sora|Runway|Pika|Suno|Udio)/ => AI绘画与视频音乐
 /(Perplexity|Character.ai|Jasper|Copy.ai|Notion AI)/ => 热门AI应用
 /(AI新品发布|AI产品更新|AI技术新品)/ => AI新品发布
